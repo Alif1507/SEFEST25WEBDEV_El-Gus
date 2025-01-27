@@ -12,6 +12,9 @@ function Hero () {
       <div>
         <h1 className='text-hero text-3xl drop-shadow-lg mt-5'>Ensure healthy lives and promote well-being for all at all ages</h1>
       </div>
+      <div>
+        <h1 className='text-hero text-2xl drop-shadow-lg mt-5'>Towards Health and Well-Being for All!</h1>
+      </div>
     </div>
   </>)
 }
