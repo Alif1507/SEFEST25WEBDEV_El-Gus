@@ -29,10 +29,7 @@ body {
   background-color: #119586;
 }
 
-.cross {
-  background-color: #EFF6FF;
-opacity: 0.8;
-background: radial-gradient(circle, transparent 20%, #EFF6FF 20%, #EFF6FF 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #EFF6FF 20%, #EFF6FF 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#3498DB 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #3498DB 2px, #EFF6FF 2px) -1px 0;
-background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 
+.menjaga-border {
+  border: solid 4px #119586;
 }
