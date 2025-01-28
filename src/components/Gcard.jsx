@@ -9,7 +9,7 @@ function Gcard({ head, subhead, satu, dua, tiga, empat, lima, enam, kiri }) {
   }
   return (
     <>
-      <div data-aos="zoom-out-right"
+      <div data-aos={`${kiri? 'fade-left' : 'fade-right'}`}
         className={`flex ${
           kiri ? "flex-row-reverse" : "flex-row"
         } items-center justify-between ${kiri ? "ml-10" : "mr-10"}`}

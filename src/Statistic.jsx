@@ -17,10 +17,8 @@ function Statistic () {
       <h1 className="poppins font-bold drop-shadow-md text-xl text-center text-white">GLOBAL STATISTICS</h1>
     </div>
 
-    <div className="flex flex-row mx-20 gap-32 abu p-7 rounded-3xl">
-      <Scard head="Life Expectancy Level" sub="72.6 Years" />
-      <Scard head="Access to Health Facilities" sub="80% of Global Population" />
-      <Scard head="Vaccination Rate" sub="85% of Children in the World" />
+    <div className="flex flex-row mx-20 abu p-7 h-64 w-auto rounded-3xl">
+      <Scard />
     </div>
     </div>
  </>)
