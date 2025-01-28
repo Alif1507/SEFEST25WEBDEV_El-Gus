@@ -11,7 +11,8 @@ function Home() {
       <div className="cross h-screen flex w-screen items-center justify-around">
         <div className="text-hero">
           <h1 className="text-6xl font-bold abu p-2 rounded-br-2xl rounded-tr-2xl">Healthy Together </h1>
-          <p className="abu p-2 rounded-br-2xl rounded-tr-2xl">Menuju Kesehatan dan Kesejahteraan untuk Semua!</p>
+          <p className="abu p-2 rounded-br-2xl rounded-tr-2xl">Ensure healthy lives and promote well-being for all at all ages <br />
+          Towards Health and Well-Being for All!</p>
           <Link to="/mental"><button className="abu p-2 rounded-br-2xl rounded-tr-2xl cursor-pointer mt-3"><Button /></button></Link>
         </div>
         <div className="w-96">

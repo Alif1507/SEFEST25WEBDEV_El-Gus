@@ -1,6 +1,16 @@
+import { useEffect } from 'react'
 import mainImg from '/main image.png'
+import AOS from 'aos'
+
 
 function Hero () {
+  useEffect(() => {
+        AOS.init({
+          duration: 500,
+          easing: 'ease-in-out',
+          once: false
+        })
+      })
   return (<>
     <div className='w-screen flex flex-col items-center poppins justify-center'>
       <div className='w-[300px] h-auto mt-40'>
