@@ -4,6 +4,14 @@ body {
   overflow-x: hidden;
 }
 
+.abu {
+  background-color: #EFF6FF;
+}
+
+.abu-text {
+  color: #EFF6FF;
+}
+
 .ijo {
   background-color: #14B8A6;
   font-family: Poppins;
@@ -15,4 +23,8 @@ body {
 
 .text-hero {
   color: #119586;
+}
+
+.bg-gangguan {
+  background-color: #119586;
 }
