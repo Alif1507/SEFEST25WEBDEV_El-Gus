@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 
 function Navbar () {
 return (<>
-  <nav className='h-24 w-screen ijo flex flex-row justify-between items-center text-white shadow-xl fixed z-50'>
+  <nav className='h-24 w-screen ijo flex flex-row justify-between items-center text-white shadow-xl absolute z-10'>
     <div className='flex items-center ml-32 space-x-4'>
       <div className='w-12 h-auto'>
       <img className='object-cover' src={logo} alt="LOGO" />

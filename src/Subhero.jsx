@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Paragraf1, { AcccordianItem } from "./components/Paragraf1.jsx";
 import AOS from "aos";
+import mental from "/mental.png"
 
 
 function Subhero() {
@@ -23,6 +24,7 @@ useEffect(() => {
           <h1 className="text-4xl text-white font-bold ml-16 text-center">
             Apa Itu Kesehatan Mental?
           </h1>
+          <div className="flex justify-around">
           <div className="text-white ml-14 mt-10">
             <Paragraf1 className="max-w-lg">
               <AcccordianItem
@@ -55,6 +57,10 @@ useEffect(() => {
                 untuk diperbincangkan.
               </AcccordianItem>
             </Paragraf1>
+          </div>
+          <div className="w-[400px] h-auto">
+            <img className="object-cover" src={mental} alt="" />
+          </div>
           </div>
         </div>
       </div>
