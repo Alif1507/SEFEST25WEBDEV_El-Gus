@@ -14,8 +14,8 @@ return (<>
     </div>
     <div className="flex items-center mr-36 space-x-8">
       <Link to='/mental'><h1 className="text-center font-bold">KESEHATAN MENTAL</h1></Link>
-      <a href="#"><h1 className="text-center">GAYA HIDUP SEHAT</h1></a>
-      <a href="#"><h1 className="text-center">AKSES KESEHATAN</h1></a>
+      <Link to='/gaya'><h1 className="text-center font-bold">GAYA HIDUP SEHAT</h1></Link>
+      <Link to='/akses'><h1 className="text-center font-bold">AKSES KESEHATAN</h1></Link>
           
           <Switch />
         </div>

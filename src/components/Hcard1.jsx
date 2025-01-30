@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router";
 import Button from "./Button";
 
-function Hcard({ head, poto, subhead, link }) {
+
+function Hcard({ head,poto, subhead, link }) {
   const [buka, setBuka] = useState(false);
 
   function clickHandler() {
@@ -13,16 +14,16 @@ function Hcard({ head, poto, subhead, link }) {
     <>
       <div
         onClick={clickHandler}
-        className={`ijo-tua flex flex-col w-[320px] ${
-          buka ? "h-[450px]" : "h-[219px]"
+        className={`${ buka ? "ijo" : "menjaga-border"} flex flex-col w-[320px] ${
+          buka ? "h-[600px]" : "h-[219px]"
         } gap-5  p-10 justify-around items-center rounded-2xl drop-shadow-2xl cursor-pointer transition-all ease-in-out duration-500`}
       >
         {/* h-[219px] */}
         <div>
-          <img src={poto} alt="" />
+          <img className="fill-white" src={poto} alt="" />
         </div>
         <div>
-          <h1 className="font-bold text-white">{head}</h1>
+            <h1 className={`font-bold ${buka ? "text-white" : "text-hero"}`}>{head}</h1>
         </div>
         <p
           onClick={clickHandler}
@@ -33,9 +34,6 @@ function Hcard({ head, poto, subhead, link }) {
           } transition-all transform ease-in-out duration-300`}
         >
           {subhead}
-          <Link to={link}>
-            <Button Children="klik untuk ke halaman" />
-          </Link>
         </p>
       </div>
     </>

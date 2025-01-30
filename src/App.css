@@ -37,3 +37,10 @@ body {
 .ijo-tua {
   background-color: #119586;
 }
+
+.bg-cross {
+  background-color: #EFF6FF;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #EFF6FF 20%, #EFF6FF 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #EFF6FF 20%, #EFF6FF 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#444cf7 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #444cf7 1.4000000000000001px, #EFF6FF 1.4000000000000001px) -0.7000000000000001px 0;
+  background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}

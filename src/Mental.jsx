@@ -4,6 +4,7 @@ import Subhero from "./Subhero.jsx"
 import Penyebab from "./Penyebab.jsx";
 import Menjaga from "./Menjaga.jsx";
 import Statistic from "./Statistic.jsx";
+import Footer from "./components/Footer.jsx";
 
 function Mental () {
   return(<>
@@ -14,6 +15,7 @@ function Mental () {
     <Penyebab />
     <Statistic />
     <Menjaga />
+    <Footer />
   </>)
 }
 

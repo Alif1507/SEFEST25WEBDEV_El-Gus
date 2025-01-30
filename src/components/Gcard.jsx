@@ -48,7 +48,7 @@ function Gcard({ head, subhead, satu, dua, tiga, empat, lima, enam, kiri }) {
           className={`bg-gangguan p-12 mt-32 text-white poppins rounded-2xl flex transition-all duration-500 ease-in-out transform  ${
             !card
               ? `${kiri ? "translate-x-full" : "-translate-x-full"} scale-80`
-              : "pointer-events-none"
+              : "pointer-events"
           }`}
         >
           <ul className="list-disc">
@@ -59,13 +59,16 @@ function Gcard({ head, subhead, satu, dua, tiga, empat, lima, enam, kiri }) {
             <li>{lima}</li>
             <li>{enam}</li>
           </ul>
-          <button onClick={clickHandler} className="-mr-5 cursor-pointer">
-            {kiri ? <FaChevronRight size={30} /> : <FaChevronLeft size={30} />}
+          <button className="-mr-5 cursor-pointer">
+            {!card}
+            {kiri ? <FaChevronRight onClick={clickHandler} size={30} /> : <FaChevronLeft onClick={clickHandler} size={30} />}
           </button>
         </div>
       </div>
+
+
     </>
   );
-}
+} 
 
 export default Gcard;

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const Button = () => {
+const Button = ({Children}) => {
   return (
     <StyledWrapper>
-      <button className='cursor-pointer'> Ayo Mulai Hidup Sehat!
+      <button className='cursor-pointer'> {Children}
       </button>
     </StyledWrapper>
   );
