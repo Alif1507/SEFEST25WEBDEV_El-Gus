@@ -1,25 +1,19 @@
-import { useEffect, useState } from "react";
-import AOS from "aos";
+import { useState } from "react";
 
 
-function Hcard({ head,poto, subhead, link }) {
+
+function Hcard({ head,poto, subhead }) {
   const [buka, setBuka] = useState(false);
 
   function clickHandler() {
     setBuka(!buka);
   }
 
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: 'ease-in-out',
-      once: false
-    })
-  })
+  
 
   return (
     <>
-      <div data-aos="fade-up"
+      <div 
         onClick={clickHandler}
         className={`${ buka ? "ijo" : "menjaga-border"} flex flex-col w-[320px] ${
           buka ? "h-[700px]" : "h-[279px]"

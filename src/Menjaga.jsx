@@ -62,7 +62,7 @@ function Menjaga() {
   return (
     <>
       <div className="grid grid-cols-3 content-around justify-items-center mt-64 gap-16">
-        <div onClick={clickHandler}>
+        <div data-aos="fade-up" onClick={clickHandler}>
           <Hcard1
             poto={poto1}
             head="TERAPI"
@@ -70,7 +70,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler1}>
+        <div data-aos="fade-up" onClick={clickHandler1}>
           <Hcard1
             poto={poto2}
             head="MEDITASI"
@@ -78,7 +78,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler2}>
+        <div data-aos="fade-up" onClick={clickHandler2}>
           <Hcard1
             poto={poto3}
             head="OLAHRAGA"
@@ -86,7 +86,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler3}>
+        <div data-aos="fade-up" onClick={clickHandler3}>
           <Hcard1
             poto={poto4}
             head="POLA MAKAN"
@@ -94,7 +94,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler4}>
+        <div data-aos="fade-up" onClick={clickHandler4}>
           <Hcard1
             poto={poto5}
             head="MENGHINDARI KEBIASAAN BURUK"
@@ -102,7 +102,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler5}>
+        <div data-aos="fade-up" onClick={clickHandler5}>
           <Hcard1
             poto={poto6}
             head="MEMPERKUAT DUKUNGAN SOSIAL"
@@ -110,7 +110,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler6}>
+        <div data-aos="fade-up" onClick={clickHandler6}>
           <Hcard1
             poto={poto7}
             head="MENJAGA KESEHATAN TUBUH"
@@ -118,7 +118,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler7}>
+        <div data-aos="fade-up" onClick={clickHandler7}>
           <Hcard1
             poto={poto8}
             head="TIDUR YANG CUKUP"
@@ -126,7 +126,7 @@ function Menjaga() {
           />
         </div>
 
-        <div onClick={clickHandler8}>
+        <div data-aos="fade-up" onClick={clickHandler8}>
           <Hcard1
             poto={poto9}
             head="MENGEMBANGKAN KETERAMPILAN KOPING"

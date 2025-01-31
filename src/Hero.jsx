@@ -12,7 +12,7 @@ function Hero () {
         })
       })
   return (<>
-    <div className='w-screen flex flex-col items-center poppins justify-center'>
+    <div data-aos="zoom-in-left" className='w-screen flex flex-col items-center poppins justify-center'>
       <div className='w-[300px] h-auto mt-40'>
         <img className='object-cover' src={mainImg} alt="" />
       </div>
