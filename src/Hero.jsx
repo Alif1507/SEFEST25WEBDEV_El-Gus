@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import mainImg from '/main image.png'
+import mainImg from '/mental/mainimg.png'
 import AOS from 'aos'
 
 

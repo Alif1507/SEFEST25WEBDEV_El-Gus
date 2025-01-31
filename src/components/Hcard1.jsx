@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router";
-import Button from "./Button";
+import { useEffect, useState } from "react";
+import AOS from "aos";
 
 
 function Hcard({ head,poto, subhead, link }) {
@@ -10,12 +9,20 @@ function Hcard({ head,poto, subhead, link }) {
     setBuka(!buka);
   }
 
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-out',
+      once: false
+    })
+  })
+
   return (
     <>
-      <div
+      <div data-aos="fade-up"
         onClick={clickHandler}
         className={`${ buka ? "ijo" : "menjaga-border"} flex flex-col w-[320px] ${
-          buka ? "h-[600px]" : "h-[219px]"
+          buka ? "h-[700px]" : "h-[279px]"
         } gap-5  p-10 justify-around items-center rounded-2xl drop-shadow-2xl cursor-pointer transition-all ease-in-out duration-500`}
       >
         {/* h-[219px] */}
@@ -23,7 +30,7 @@ function Hcard({ head,poto, subhead, link }) {
           <img className="fill-white" src={poto} alt="" />
         </div>
         <div>
-            <h1 className={`font-bold ${buka ? "text-white" : "text-hero"}`}>{head}</h1>
+            <h1 className={`font-bold ${buka ? "text-white" : "text-hero"} text-center`}>{head}</h1>
         </div>
         <p
           onClick={clickHandler}

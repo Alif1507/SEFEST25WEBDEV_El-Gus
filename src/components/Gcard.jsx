@@ -1,7 +1,15 @@
-import { useState } from "react";
+import AOS from "aos";
+import { useEffect, useState } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 function Gcard({ head, subhead, satu, dua, tiga, empat, lima, enam, kiri }) {
+  useEffect(() => {
+          AOS.init({
+            duration: 500,
+            easing: 'ease-in-out',
+            once: false
+          })
+        })
   const [card, setCard] = useState(false);
 
   function clickHandler() {
@@ -12,7 +20,7 @@ function Gcard({ head, subhead, satu, dua, tiga, empat, lima, enam, kiri }) {
       <div data-aos={`${kiri? 'fade-left' : 'fade-right'}`}
         className={`flex ${
           kiri ? "flex-row-reverse" : "flex-row"
-        } items-center justify-between ${kiri ? "ml-10" : "mr-10"}`}
+        } items-center justify-between mt-20 ${kiri ? "ml-10" : "mr-10"}`}
       >
         <div
           className={`h-[235px] w-[752px] ijo ${

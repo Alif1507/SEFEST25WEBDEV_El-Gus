@@ -1,6 +1,7 @@
 import Gcard from "./components/Gcard.jsx";
 
 function Penyebab() {
+  
   return (
     <>
       <Gcard
