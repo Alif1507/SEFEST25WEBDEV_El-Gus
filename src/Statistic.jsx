@@ -12,7 +12,7 @@ function Statistic () {
     })
 
  return (<>
-    <div className="ijo h-[352px] flex flex-col justify-center items-center gap-10 mt-32">
+    <div className="ijo h-[352px] flex flex-col justify-center items-center gap-10 mt-[900px]">
     <div data-aos="zoom-in-up" className="flex justify-center w-screen">
       <h1 className="poppins font-bold drop-shadow-md text-xl text-center text-white">GLOBAL STATISTICS</h1>
     </div>
