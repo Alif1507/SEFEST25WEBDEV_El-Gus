@@ -5,6 +5,9 @@ import Button from "./Button";
 function Hcard({ head, poto, subhead, link }) {
   const [buka, setBuka] = useState(false);
 
+  console.log(head);
+  
+
   function clickHandler() {
     setBuka(!buka);
   }

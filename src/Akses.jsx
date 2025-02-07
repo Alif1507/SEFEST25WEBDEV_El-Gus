@@ -10,6 +10,9 @@ import edukasi2 from "/akses/edukasi2.png";
 import edukasi3 from "/akses/edukasi3.png";
 import edukasi4 from "/akses/edukasi4.png";
 import edukasi5 from "/akses/edukasi5.png";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 
 function Akses() {
   useEffect(() => {
@@ -87,12 +90,67 @@ function Akses() {
         </h1>
       </div>
 
+    
+      <div className="absolute inset-0 pointer-events-none mask-[linear-gradient(to_right,rgba(0,0,0,0),rgba(0,0,0,1)40%,rgba(0,0,0,1)60%,rgba(0,0,0,0))]"></div>
+
       <div
-        className="flex scroll-smooth snap-x snap-mandatory gap-32 overflow-x-scroll mx-[510px] [&::-webkit-scrollbar]:w-2
-  [&::-webkit-scrollbar-track]:bg-gray-100
-  [&::-webkit-scrollbar-thumb]:bg-gray-300"
+        className="flex scroll-smooth snap-x snap-mandatory gap-28 "
       >
-        <div className="snap-center">
+        <Carousel
+  
+  additionalTransfrom={0}
+  arrows
+  autoPlaySpeed={3000}
+  centerMode={false}
+  className=""
+  containerClass={`container-with-dots w-full`}
+  dotListClass=""
+  draggable
+  focusOnSelect={false}
+  infinite
+  itemClass="item-container"
+  keyBoardControl
+  minimumTouchDrag={80}
+  pauseOnHover
+  renderArrowsWhenDisabled={false}
+  renderButtonGroupOutside={false}
+  renderDotsOutside={false}
+  responsive={{
+    desktop: {
+      breakpoint: {
+        max: 3000,
+        min: 1024
+      },
+      items: 3,
+      partialVisibilityGutter: 40
+    },
+    mobile: {
+      breakpoint: {
+        max: 464,
+        min: 0
+      },
+      items: 1,
+      partialVisibilityGutter: 30
+    },
+    tablet: {
+      breakpoint: {
+        max: 1024,
+        min: 464
+      },
+      items: 2,
+      partialVisibilityGutter: 30
+    }
+  }}
+  rewind={false}
+  rewindWithAnimation={false}
+  rtl={false}
+  shouldResetAutoplay
+  showDots={false}
+  sliderClass=""
+  slidesToSlide={1}
+  swipeable
+>
+<div className="snap-center">
           <Edukasi
             poto={edukasi1}
             head="Pencegahan Penyakit"
@@ -142,7 +200,9 @@ function Akses() {
             tiga="Obat dan Vaksin Baru: Inovasi di bidang farmasi terus berkembang untuk menyediakan pengobatan yang lebih efektif dan minim efek samping."
           />
         </div>
+</Carousel>
       </div>
+      
     </>
   );
 }

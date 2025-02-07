@@ -17,7 +17,6 @@ return (<>
       <Link to='/gaya'><h1 className="text-center font-bold">GAYA HIDUP SEHAT</h1></Link>
       <Link to='/akses'><h1 className="text-center font-bold">AKSES KESEHATAN</h1></Link>
           
-          <Switch />
         </div>
   </nav>
 </>)

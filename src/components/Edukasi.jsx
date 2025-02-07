@@ -5,9 +5,9 @@ function Edukasi({head, subhead, satu,dua,tiga, poto}) {
     <>
       
       
-      <div className="flex justify-center ">
-      <div className="bg-[#119586] w-[497px] h-[660px] py-5 px-3 mt-16 flex flex-col items-center rounded-2xl drop-shadow-2xl">
-        <h1 className="text-white text-3xl font-bold mb-10">
+      <div className="flex justify-center drop-shadow-2xl">
+      <div className="bg-[#119586] w-[407px] h-max-[460px] py-5 px-4 mt-16 flex flex-col items-center rounded-2xl drop-shadow-2xl">
+        <h1 className="text-white text-3xl font-bold mb-10 text-center">
           {head}
         </h1>
         <img src={poto} alt="" />
