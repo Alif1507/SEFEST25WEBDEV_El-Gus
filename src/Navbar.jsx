@@ -1,6 +1,5 @@
 import logo from '/HS (1) 1.png'
 import './App.css'
-import Switch from './components/Switch.jsx'
 import { Link } from 'react-router'
 
 function Navbar () {
@@ -16,7 +15,6 @@ return (<>
       <Link to='/mental'><h1 className="text-center font-bold">KESEHATAN MENTAL</h1></Link>
       <Link to='/gaya'><h1 className="text-center font-bold">GAYA HIDUP SEHAT</h1></Link>
       <Link to='/akses'><h1 className="text-center font-bold">AKSES KESEHATAN</h1></Link>
-      <Link to='/forum'><h1 className="text-center font-bold">FORUM</h1></Link>
           
         </div>
   </nav>

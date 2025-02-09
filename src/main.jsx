@@ -7,7 +7,6 @@ import Home from './Home.jsx'
 import Mental from './Mental.jsx'
 import Gaya from './Gaya.jsx'
 import Akses from './Akses.jsx'
-import Forum from './Forum.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,7 +17,6 @@ createRoot(document.getElementById('root')).render(
       <Route path='/mental' element={<Mental />} />
       <Route path='/gaya' element={<Gaya />} />
       <Route path='/akses' element={<Akses />} />
-      <Route path='/forum' element={<Forum />} />
     </Routes>
     </BrowserRouter>
   </StrictMode>,
